@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net461</TargetFrameworks>
+    <VersionPrefix>2.6.0</VersionPrefix>
+    <!--<VersionSuffix>preview1</VersionSuffix>-->
+    <Description>ASP.NET Core authentication handler to validate JWT and reference tokens from IdentityServer4</Description>
+    <Authors>Brock Allen;Dominick Baier;charles</Authors>
+    <PackageId>AccessTokenValidation4</PackageId>
+    <PackageTags>OAuth2;OAuth 2.0;OpenID Connect;Security;Identity;IdentityServer;Bearer tokens</PackageTags>
+    <PackageIconUrl></PackageIconUrl>
+    <PackageProjectUrl></PackageProjectUrl>
+    <PackageLicenseUrl></PackageLicenseUrl>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <RootNamespace>IdentityServer4.AccessTokenValidation</RootNamespace>
+    <Configurations>Debug;Release;Alpha;Publish</Configurations>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="IdentityModel.AspNetCore.OAuth2Introspection" Version="3.3.0" />
+    <PackageReference Include="jose-jwt" Version="2.4.0" />
+    <PackageReference Include="SourceLink.Embed.AllSourceFiles" Version="2.8.0" PrivateAssets="all" />
+    
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authorization" Version="2.0.0" />
+  </ItemGroup>
+</Project>

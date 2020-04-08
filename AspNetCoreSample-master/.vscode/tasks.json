@@ -1,0 +1,62 @@
+{
+    "version": "2.0.0",
+    "tasks": [{
+            "label": "BuildCookieSample",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "type": "shell",
+            "command": "dotnet",
+            "args": [
+                "build",
+                "${workspaceRoot}/src/CookieSample/CookieSample.csproj"
+            ],
+            "problemMatcher": [
+                "$msCompile"
+            ]
+        },
+        {
+            "label": "BuildOAuthSample",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "type": "shell",
+            "command": "dotnet",
+            "args": [
+                "build",
+                "${workspaceRoot}/src/OAuthSample/OAuthSample.csproj"
+            ],
+            "problemMatcher": [
+                "$msCompile"
+            ]
+        },
+        {
+            "label": "BuildOIDCSample",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "type": "shell",
+            "command": "dotnet",
+            "args": [
+                "build",
+                "${workspaceRoot}/src/OIDCSample/OIDCSample.csproj"
+            ],
+            "problemMatcher": [
+                "$msCompile"
+            ]
+        },
+        {
+            "label": "BuildAuthorizationSample",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceRoot}/src/AuthorizationSample/AuthorizationSample.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}

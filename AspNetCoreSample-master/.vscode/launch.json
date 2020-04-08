@@ -1,0 +1,129 @@
+{
+    // Use IntelliSense to find out which attributes exist for C# debugging
+    // Use hover for the description of the existing attributes
+    // For further information visit https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md
+    "version": "0.2.0",
+    "configurations": [{
+            "name": ".NET Core Launch (CookieSample)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "BuildCookieSample",
+            "program": "${workspaceRoot}/src/CookieSample/bin/Debug/netcoreapp2.0/CookieSample.dll",
+            "args": [],
+            "cwd": "${workspaceRoot}/src/CookieSample",
+            "stopAtEntry": false,
+            "internalConsoleOptions": "openOnSessionStart",
+            "launchBrowser": {
+                "enabled": true,
+                "args": "${auto-detect-url}",
+                "windows": {
+                    "command": "cmd.exe",
+                    "args": "/C start ${auto-detect-url}"
+                },
+                "osx": {
+                    "command": "open"
+                },
+                "linux": {
+                    "command": "xdg-open"
+                }
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceRoot}/Views"
+            }
+        },
+        {
+            "name": ".NET Core Launch (OAuth)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "BuildOAuthSample",
+            "program": "${workspaceRoot}/src/OAuthSample/bin/Debug/netcoreapp2.0/OAuthSample.dll",
+            "args": [],
+            "cwd": "${workspaceRoot}",
+            "stopAtEntry": false,
+            "launchBrowser": {
+                "enabled": true,
+                "args": "${auto-detect-url}",
+                "windows": {
+                    "command": "cmd.exe",
+                    "args": "/C start ${auto-detect-url}"
+                },
+                "osx": {
+                    "command": "open"
+                },
+                "linux": {
+                    "command": "xdg-open"
+                }
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceRoot}/Views"
+            }
+        },
+        {
+            "name": ".NET Core Launch (OIDCSample)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "BuildOIDCSample",
+            "program": "${workspaceRoot}/src/OIDCSample/bin/Debug/netcoreapp2.0/OIDCSample.dll",
+            "args": [],
+            "cwd": "${workspaceRoot}",
+            "stopAtEntry": false,
+            "launchBrowser": {
+                "enabled": true,
+                "args": "${auto-detect-url}",
+                "windows": {
+                    "command": "cmd.exe",
+                    "args": "/C start ${auto-detect-url}"
+                },
+                "osx": {
+                    "command": "open"
+                },
+                "linux": {
+                    "command": "xdg-open"
+                }
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceRoot}/Views"
+            }
+        },
+        {
+            "name": ".NET Core Launch (AuthorizationSample)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "BuildAuthorizationSample",
+            "program": "${workspaceFolder}/src/AuthorizationSample/bin/Debug/netcoreapp2.0/AuthorizationSample.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "internalConsoleOptions": "openOnSessionStart",
+            "launchBrowser": {
+                "enabled": true,
+                "args": "${auto-detect-url}",
+                "windows": {
+                    "command": "cmd.exe",
+                    "args": "/C start ${auto-detect-url}"
+                },
+                "osx": {
+                    "command": "open"
+                },
+                "linux": {
+                    "command": "xdg-open"
+                }
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/src/AuthorizationSample/Views"
+            }
+        }
+    ]
+}
