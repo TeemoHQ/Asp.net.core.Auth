@@ -36,12 +36,12 @@ namespace Jwt
             }).AddJwtBearer(o =>
             {
                 //[{"key":"Authorization","value":"bearer *****" }]
-                //o.TokenValidationParameters = new TokenValidationParameters
-                //{
-                //    ValidAudience = jwtSettings.Audience,
-                //    ValidIssuer = jwtSettings.Issuer,
-                //    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings.SecretKey))
-                //};
+                o.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidAudience = jwtSettings.Audience,
+                    ValidIssuer = jwtSettings.Issuer,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings.SecretKey))
+                };
 
                 //[{"key":"Token","value":"*****" }]
                 o.Events=new JwtBearerEvents

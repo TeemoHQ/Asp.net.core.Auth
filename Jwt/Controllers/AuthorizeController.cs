@@ -23,7 +23,7 @@ namespace Jwt.Controllers
         }
 
         [HttpPost]
-        public IActionResult Token(LoginViewModel loginViewModel)
+        public IActionResult Token([FromBody]LoginViewModel loginViewModel)
         {
             if (ModelState.IsValid)
             {

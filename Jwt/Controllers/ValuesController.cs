@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Jwt.Controllers
 {
-    [Authorize(Roles = "admin")]
+    [Authorize]
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
